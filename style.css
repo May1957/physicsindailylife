@@ -1,0 +1,149 @@
+
+ body {
+  background-image: url("https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/webb-STScI-01JKREFYNJE7MT5SG2H0FBYG75-2K.png?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint");
+  background-size: cover;       /* fills the whole screen */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* no tiling */
+  background-attachment: fixed; /* stays fixed when scrolling */
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+p {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: #ffffff;
+  color: rgb(26, 25, 25);
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+/* the container that holds image + hidden content */
+.hover-box {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+
+/* the image */
+.hover-box img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* the hidden content — invisible by default */
+.hidden-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  opacity: 0;                    /* invisible */
+  transition: opacity 0.4s;     /* smooth fade */
+}
+
+/* when mouse hovers — content appears */
+.hover-box:hover .hidden-content {
+  opacity: 1;                    /* visible */
+}
+/* PAGE 2 - image container */
+.hover-box {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin: 40px auto;
+  display: block;
+}
+
+/* the image itself */
+.hover-box img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* hidden content - invisible by default */
+.hidden-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  text-align: center;
+  gap: 12px;
+}
+
+/* when mouse hovers over image - content appears */
+.hover-box:hover .hidden-content {
+  opacity: 1;
+}
+
+/* style the hidden text */
+.hidden-content h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hidden-content p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* style the button inside hover */
+.hidden-content button {
+  background: white;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.hidden-content button:hover {
+  background: #eeeeee;
+}
+
+/* go back link */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,238 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-image: url("https://www.nasa.gov/wp-content/uploads/2023/03/622785main_6313004758_30e7fc70e6_o_full.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #f1eff5;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #eeeaed;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* search */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 320px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #444;
+  background: #111;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #160749;
+}
+
+.search-box button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  background: #210866;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.search-box button:hover {
+  background: #1e0644;
+}
+
+/* suggestions */
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.suggestions span {
+  background: #ece5e5;
+  background: #e8e6eb;
+  border: 1px solid ;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.suggestions span:hover {
+  background: #320f5f;
+  color: rgb(247, 237, 237);
+  border-color:#320f5f;
+}
+
+/* result card */
+.result {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  background: #0a0a1a;
+  border: 1px solid #222;
+  border-radius: 20px;
+  padding: 40px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* planet visual */
+.result-image {
+  flex-shrink: 0;
+}
+
+.planet-visual {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255,255,255,0.15);
+}
+
+/* info */
+.result-info { flex: 1; }
+
+.result-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.result-info p {
+  color: #bbbbbb;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* equation box */
+.equation-box {
+  background: #0f0f2a;
+  border: 1px solid #2a2a5a;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.eq-label {
+  font-size: 0.75rem;
+  color: #6666aa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.equation {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #ffe066;
+  margin-bottom: 8px;
+}
+
+.eq-explain {
+  font-size: 0.85rem;
+  color: #8888bb;
+  line-height: 1.6;
+}
+
+/* facts */
+.facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fact {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.fact-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fact-value {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.not-found {
+  color: #ff6666;
+  font-size: 1.1rem;
+  margin-top: 30px;
+}
+/* constellation clickable path */
+.constellation-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto 20px;
+  cursor: pointer;
+  width: fit-content;
+  transition: transform 0.3s;
+}
+
+.constellation-path:hover {
+  transform: scale(1.1);
+}
+
+.constellation-path svg .star {
+  transition: all 0.3s;
+}
+
+.constellation-path:hover svg .star {
+  fill: #ffe066;
+  filter: drop-shadow(0 0 6px #ffe066);
+}
+
+.constellation-path:hover svg line {
+  opacity: 0.9 !important;
+  stroke: #ffe066;
+}
+
+.constellation-label {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.constellation-path:hover .constellation-label {
+  color: #ffe066;
+}
