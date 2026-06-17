@@ -17,7 +17,7 @@
     name: "Mercury",
     img: "https://science.nasa.gov/wp-content/uploads/2024/03/pia15162-mercury-basins-messenger-16x9-1.jpg?resize=600,338",
     color: "radial-gradient(circle at 35% 35%, #c8c8c8, #888888, #555555)",
-    desc: "Mercury is the smallest planet and closest to the Sun. Its position was so difficult to predict that it required Einstein's General Relativity to fully explain its orbit.",
+    desc: "Mercury is the smallest planet in our solar system and nearest to the Sun. It's only slightly larger than Earth's Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter.",
     equation: "Δφ = 43'' per century",
     eqExplain: "The precession of Mercury's perihelion — the extra 43 arcseconds per century in Mercury's orbit that Newton's laws couldn't explain, but Einstein's relativity could.",
     facts: [
