@@ -30,7 +30,6 @@ h1 {
   margin-right: auto;
 }
 
-/* search */
 .search-box {
   display: flex;
   justify-content: center;
@@ -69,7 +68,6 @@ h1 {
   background: #1e0644;
 }
 
-/* suggestions */
 .suggestions {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +93,6 @@ h1 {
   border-color:#320f5f;
 }
 
-/* result card */
 .result {
   display: flex;
   gap: 40px;
@@ -116,7 +113,6 @@ h1 {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* planet visual */
 .result-image {
   flex-shrink: 0;
 }
@@ -128,7 +124,6 @@ h1 {
   box-shadow: 0 0 40px rgba(255,255,255,0.15);
 }
 
-/* info */
 .result-info { flex: 1; }
 
 .result-info h2 {
@@ -144,7 +139,6 @@ h1 {
   font-size: 0.95rem;
 }
 
-/* equation box */
 .equation-box {
   background: #0f0f2a;
   border: 1px solid #2a2a5a;
@@ -174,7 +168,6 @@ h1 {
   line-height: 1.6;
 }
 
-/* facts */
 .facts {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -207,7 +200,6 @@ h1 {
   font-size: 1.1rem;
   margin-top: 30px;
 }
-/* constellation clickable path */
 .constellation-path {
   display: flex;
   flex-direction: column;
