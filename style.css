@@ -1,17 +1,14 @@
-/* font */
 @font-face {
   font-family: 'SDGlitch';
   src: url('fonts/SDGlitch.ttf') format('truetype');
 }
 
-/* reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* background */
 body {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1c/NGC_6302_Hubble_2009.full.jpg');
   background-size: cover;
@@ -26,7 +23,6 @@ body {
 }
 
 
-/* top stars decoration */
 .top-decoration {
   font-size: 1rem;
   color: #d1cfc6;
@@ -34,7 +30,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* main heading */
 h1 {
   font-family: Impact, Haettenschweiler, sans-serif;
   font-size: 7rem;
@@ -46,7 +41,6 @@ h1 {
     0 0 20px rgba(0, 0, 0, 0.9);
 }
 
-/* subtitle */
 .subtitle {
   font-family: Arial, sans-serif;
   font-weight: 400;
@@ -59,7 +53,6 @@ h1 {
   letter-spacing: 1px;
 }
 
-/* divider line */
 .divider {
   width: 60px;
   height: 1px;
@@ -68,7 +61,6 @@ h1 {
   opacity: 0.5;
 }
 
-/* description text */
 .description {
   font-size: 0.95rem;
   color: #ffffff;
@@ -76,7 +68,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* enter button */
 button {
   background: transparent;
   color: #420977;
@@ -99,7 +90,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* bottom decoration */
 .bottom-decoration {
   margin-top: 40px;
   display: flex;
