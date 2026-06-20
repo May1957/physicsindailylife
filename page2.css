@@ -1,4 +1,4 @@
-/* black background for the whole page */
+
 body {
   background-color: black;
   color: white;
@@ -25,14 +25,14 @@ p {
   margin: 40px auto;
 }
 
-/* the image */
+
 .hover-box img {
   width: 100%;
   border-radius: 12px;
   display: block;
 }
 
-/* hidden content - invisible by default */
+
 .hidden-content {
   position: absolute;
   top: 0;
@@ -52,7 +52,7 @@ p {
   gap: 12px;
 }
 
-/* content appears on hover */
+
 .hover-box:hover .hidden-content {
   opacity: 1;
 }
@@ -69,7 +69,7 @@ p {
   color: #dddddd;
 }
 
-/* button inside hover */
+
 .hidden-content button {
   background: white;
   color: black;
